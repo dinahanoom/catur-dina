@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catur Jawa Genfan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header>
+      <div class="symbol">✦</div>
+      <h1>CATUR JAWA</h1>
+      <p>GENFAN • PERMAINAN TRADISIONAL NUSANTARA</p>
+    </header>
+
+    <section class="scoreboard">
+      <div class="player-card active" id="playerX">
+        <span class="piece x">X</span>
+        <span>Pemain X</span>
+        <strong id="scoreX">0</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="player-card" id="playerO">
+        <span class="piece o">O</span>
+        <span>Pemain O</span>
+        <strong id="scoreO">0</strong>
+      </div>
+    </section>
+
+    <div class="status" id="status">Giliran Pemain X</div>
+
+    <section class="board" id="board" aria-label="Papan Catur Jawa">
+      <button class="cell" data-index="0" aria-label="Kotak 1"></button>
+      <button class="cell" data-index="1" aria-label="Kotak 2"></button>
+      <button class="cell" data-index="2" aria-label="Kotak 3"></button>
+      <button class="cell" data-index="3" aria-label="Kotak 4"></button>
+      <button class="cell" data-index="4" aria-label="Kotak 5"></button>
+      <button class="cell" data-index="5" aria-label="Kotak 6"></button>
+      <button class="cell" data-index="6" aria-label="Kotak 7"></button>
+      <button class="cell" data-index="7" aria-label="Kotak 8"></button>
+      <button class="cell" data-index="8" aria-label="Kotak 9"></button>
+    </section>
+
+    <button class="new-game" id="newGame">↻ &nbsp; PERMAINAN BARU</button>
+    <p class="footer">❖ CATUR JAWA GENFAN ❖</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
